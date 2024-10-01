@@ -1,0 +1,345 @@
+﻿/*
+@import url('https://fonts.googleapis.com/css?family=Quicksand');*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/*body {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    min-height: 100vh;
+    background-color: white;
+}*/
+
+#inicio {
+    margin-top: 56px; /* Ajusta este valor según la altura de tu nav */
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    transition: text-shadow 0.3s ease; /* Transición suave para el efecto de sombreado */
+}
+
+    /* Efecto de sombreado al pasar el cursor */
+    .navbar-nav .nav-link:hover {
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra en el texto al pasar el cursor */
+        color: white;
+    }
+
+#banner {
+    background-image: url(images/Pizza2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Fija la imagen para que se mantenga al hacer scroll */
+    padding: 210px;
+    color: white;
+    text-shadow: 1px 1px 5px black;
+}
+
+    #banner h1 {
+        font-family: 'Quicksand', sans-serif;
+        text-align: left;
+        margin-left: 120px;
+        color: white;
+        font-size: 60px;
+    }
+
+    #banner p {
+        font-family: 'Quicksand', sans-serif;
+        text-align: left;
+        color: white;
+        /* opacity: 0.8;*/
+        font-size: 50px;
+        /*font-weight: lighter;*/
+    }
+
+/* Asegura que las imágenes sean responsivas y se ajusten al tamaño del contenedor */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.text-center {
+    /* Centra el texto y los elementos dentro de las columnas */
+    text-align: center;
+}
+
+#menuPizza {
+    /*font-family: 'Quicksand', sans-serif;
+    font-size: 40px;*/
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+
+    #menuPizza h2 {
+        font-family: 'Quicksand', sans-serif;
+        text-decoration: underline; /* usar border-bottom en lugar de esta línea */
+       /* border-bottom: 2px solid black; 
+        padding-bottom: 5px; /* Espacio entre el texto y la línea */
+        font-size: 30px;
+    }
+
+    #menuPizza h3 {
+        font-family: 'Quicksand', sans-serif; 
+        font-size: 30px; 
+        margin-top: 20px; /* Espacio superior para separar del contenido superior */
+        margin-bottom: 10px; /* Espacio inferior para separar del contenido inferior */
+    }
+
+    #menuPizza p {
+        font-family: 'Quicksand', sans-serif; 
+        font-size: 20px;
+        line-height: 1.6; 
+        margin: 0 auto; 
+        max-width: 500px; 
+    }
+
+#bebidas {
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+
+    #bebidas h2 {
+        font-family: 'Quicksand', sans-serif;
+        text-decoration: underline; /* usar border-bottom en lugar de esta línea */
+        /* border-bottom: 2px solid black; 
+        padding-bottom: 5px; /* Espacio entre el texto y la línea */
+        font-size: 40px;
+        
+    }
+
+    #bebidas h3 {
+        font-family: 'Quicksand', sans-serif;
+        font-size: 40px; 
+        margin-top: 20px; /* Espacio superior para separar del contenido superior */
+        margin-bottom: 10px; /* Espacio inferior para separar del contenido inferior */
+    }
+
+    #bebidas p {
+        font-family: 'Quicksand', sans-serif;
+        font-size: 40px;
+        line-height: 1.6; /* Mejora la legibilidad */
+        margin: 0 auto; /* Centra el texto dentro del contenedor */
+        max-width: 500px; /* Limita el ancho del texto para mejorar la legibilidad */
+    }
+
+#postres {
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+
+    #postres h2 {
+        font-family: 'Quicksand', sans-serif;
+        text-decoration: underline; 
+        /* border-bottom: 2px solid black; 
+        padding-bottom: 5px; /* Espacio entre el texto y la línea */
+        font-size: 40px;
+    }
+
+    #postres h3 {
+        font-family: 'Quicksand', sans-serif;
+        font-size: 40px; 
+        margin-top: 20px; /* Espacio superior para separar del contenido superior */
+        margin-bottom: 10px; /* Espacio inferior para separar del contenido inferior */
+    }
+
+    #postres p {
+        font-family: 'Quicksand', sans-serif;
+        font-size: 40px; 
+        line-height: 1.6; /* Mejora la legibilidad */
+        margin: 0 auto; /* Centra el texto dentro del contenedor */
+        max-width: 500px; /* Limita el ancho del texto para mejorar la legibilidad */
+    }
+
+#redes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.footer {
+   
+    position: relative;
+    width: 100%;
+    background: black;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+    .footer p {
+        margin-top: 20px;
+        color: #fff;
+        font-size: 10px;
+    }
+
+.social-icon {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+.icon {
+    color: white;
+    font-size: 30px;
+    display: inline-block;
+    transition: 0.5s;
+}
+    .icon:hover {
+        transform: translateY(-10px);
+    }
+
+.menu2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+.menu-elem {
+    list-style: none;
+}
+
+.menu-icon {
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px 10px;
+    transition: 0.3s;
+    /*opacity: 0.5;
+    transition: text-shadow 0.3s ease, opacity 0.3s ease;*/
+}
+
+    .menu-icon:hover {
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        opacity: 1;
+        color: white;
+    }
+
+.text {
+    color: white;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+/*CSS paran label pagina secundaria*/
+
+.navbar-nav1 {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+    .navbar-nav1 .nav-link1 {
+        color: white;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 15px;
+        text-decoration: none;
+        transition: text-shadow 0.3s ease; /* Transición suave para el efecto de sombreado */
+        margin-left: 15px;
+    }
+
+        /* Efecto de sombreado al pasar el cursor */
+        .navbar-nav1 .nav-link1:hover {
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra en el texto al pasar el cursor */
+            color: white;
+            text-decoration: underline;
+        }
+
+.form-container {
+    background-color: #f8f9fa; /* Fondo claro */
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #dee2e6; /* Borde gris claro */
+}
+
+.form-control {
+    border-radius: 4px;
+}
+
+.form-container h3 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.form-container p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+  
+}
+
+.form-check {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.form-container textarea {
+    margin-bottom: 20px; /* Espacio adicional debajo del textarea */
+}
+
+header {
+    background-color: #343a40; /* Fondo oscuro del nav */
+    z-index: 1000; /* Asegura que el nav esté por encima del contenido */
+}
+
+.container.mt-3 {
+    padding-top: 80px; 
+}
+
+.boton {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+}
+.btn-warning {
+    background-color: blue;
+    
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    
+}
+    .btn-warning:hover {
+        background-color: #0056b3;
+    }
+
+.boton .row {
+    justify-content: center; 
+}
+
+.boton .col-lg-2 {
+    margin-left: 0; /* Asegura que no tenga margen a la izquierda */
+}
